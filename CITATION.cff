@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Frequency Domain Feature Learning: Discrete Fourier Transform Enhanced Convolutional Neural Networks for EEG Signal Classification"
+abstract: "A controlled comparison of DFT log-magnitude preprocessing versus raw time-domain input for 1D CNN classification of EEG signals on the UCI Epileptic Seizure Recognition dataset."
+authors:
+  - family-names: "Rahman"
+    given-names: "Md Neshadur"
+version: "1.0.0"
+date-released: "2026-06-14"
+license: MIT
+keywords:
+  - Discrete Fourier Transform
+  - Convolutional Neural Network
+  - EEG classification
+  - Digital Signal Processing
+  - epileptic seizure detection
+  - frequency domain
+type: software
