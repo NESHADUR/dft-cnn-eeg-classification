@@ -12,8 +12,8 @@ EEG signals. This project asks a simple Digital Signal Processing question:
 > improve classification — or is end-to-end learning from the raw waveform better?*
 
 **Answer:** yes, modestly but consistently. On the UCI Epileptic Seizure Recognition dataset, the
-DFT-CNN reaches **82.33%** test accuracy vs. **81.05%** for the raw-signal CNN, using **half the input
-features** (90 bins vs. 178 samples) and training **46% faster**.
+DFT-CNN reaches **82.33%** test accuracy vs. **81.05%** for the raw-signal CNN, using **49% fewer input
+features** (90 bins vs. 178 samples) and training **1.46× faster** (31% less wall-clock time).
 
 ---
 
@@ -22,8 +22,8 @@ features** (90 bins vs. 178 samples) and training **46% faster**.
 | Contribution | Result |
 |---|---|
 | DFT log-magnitude preprocessing vs. raw time-domain input | **82.33%** vs. 81.05% test accuracy (+1.27 pp) |
-| Input dimensionality | 178 samples → **90 frequency bins** (−50%) |
-| Training time (30 epochs) | **57.06 s** vs. 83.11 s (**−46%**, 1.46× faster) |
+| Input dimensionality | 178 samples → **90 frequency bins** (−49%) |
+| Training time (30 epochs) | **57.06 s** vs. 83.11 s (**−31%**, 1.46× faster) |
 | Ablation: magnitude vs. phase | Magnitude **82.67%**, phase-only **48.46%** (≈ chance for 5-way) |
 | Best class | Seizure: **F1 = 0.979** |
 | Hardest classes | Tumor area (0.679) & healthy area (0.688) — spectrally similar |
